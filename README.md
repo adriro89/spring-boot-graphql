@@ -11,6 +11,8 @@ The project is organized according to Clean Architecture principles and is divid
 - **domain**: Contains the domain objects and core entities.
 - **dto**: Contains Data Transfer Objects (DTOs) used for input and output operations.
 - **entity**: Contains JPA entities that are mapped to the database.
+- **exception**: Contains custom exceptions and a custom GraphQL exception handler.
+- **mapper**: Contains mappers to perform the conversion between domain objects and core entities.
 - **repository**: Contains the interfaces for data access.
 - **resolver**: Contains GraphQL resolvers that define how queries and mutations are resolved.
 - **service**: Contains business services that implement the application's logic.
