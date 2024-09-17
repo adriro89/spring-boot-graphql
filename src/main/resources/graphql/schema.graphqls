@@ -1,0 +1,19 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    allBooks: [Book]
+    booksPaginated(first: Int, after: String): BookConnection
+    bookById(id: ID!): Book
+
+    allAuthors: [Author]
+    authorByBook(bookId: ID!): Author
+}
+
+type Mutation {
+    createAuthor(input: CreateAuthorInput!): Author
+    updateAuthor(id: ID!, input: UpdateAuthorInput!): Author
+    deleteAuthor(id: ID!): Boolean
+}

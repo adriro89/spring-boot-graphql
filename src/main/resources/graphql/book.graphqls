@@ -1,0 +1,15 @@
+type Book {
+    id: ID
+    title: String
+    author: Author
+}
+
+type BookEdge {
+    cursor: String
+    node: Book
+}
+
+type BookConnection {
+    edges: [BookEdge]
+    pageInfo: PageInfo
+}
